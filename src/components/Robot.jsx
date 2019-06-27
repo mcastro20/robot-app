@@ -1,13 +1,15 @@
 import React from "react";
+import "./Robot.css";
 
-export default function Robot() {
+export default function Robot({ direction }) {
   return (
     <span
       role="img"
       aria-label="robot"
+      className={direction}
       style={{
-        position: "relative",
-        fontSize: "15vh",
+        position: "absolute",
+        fontSize: "10vh"
       }}
     >
       🤖
