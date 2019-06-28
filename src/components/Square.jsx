@@ -11,6 +11,8 @@ export default function Square({ grey, children }) {
         color: stroke,
         width: '100%',
         height: '100%',
+        display: "flex",
+        justifyContent: "center"
       }}
     >
       {children}
