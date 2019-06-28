@@ -2,7 +2,19 @@ import React from 'react';
 import './App.css';
 import Table from './components/Table'
 import Command from './components/Command'
-import { Row, Col, Modal, ModalHeader, ModalBody, ModalFooter, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import {
+	Row,
+	Col,
+	Modal,
+	ModalHeader,
+	ModalBody,
+	ModalFooter,
+	Button,
+	Form,
+	FormGroup,
+	Label,
+	Input
+} from 'reactstrap';
 
 export default class App extends React.Component {
 	constructor(props) {
@@ -147,7 +159,7 @@ export default class App extends React.Component {
 		const name = e.target.name;
 		var value = '';
 
-		if (name != "direction") {
+		if (name !== "direction") {
 			value = parseInt(e.target.value);
 		} else {
 			value = e.target.value;
@@ -161,12 +173,21 @@ export default class App extends React.Component {
 		}));
 	}
 
+	showReport = () => {
+		this.setState({
+			showReport: !this.state.showReport
+		})
+	}
+
 	render() {
 		console.log(this.state)
+
 		return (
 			<div className="App">
+
 				<Table robotPosition={this.state.robotPosition} />
 				<Command
+					report={this.showReport}
 					right={this.right}
 					left={this.left}
 					move={this.move}
@@ -219,6 +240,18 @@ export default class App extends React.Component {
 							<Button type="submit" color="primary">Place Robot</Button>{' '}
 						</ModalFooter>
 					</Form>
+				</Modal>
+
+				<Modal isOpen={this.state.showReport} toggle={this.showReport} >
+					<ModalHeader>Robot Position Report</ModalHeader>
+					<ModalBody>
+						Position X is {this.state.robotPosition.positionX} <br />
+						Position Y is {this.state.robotPosition.positionY} <br />
+						Facing in {this.state.robotPosition.direction} <br />
+					</ModalBody>
+					<ModalFooter>
+						<Button color="secondary" onClick={this.showReport}>Ok</Button>
+					</ModalFooter>
 				</Modal>
 			</div>
 		);

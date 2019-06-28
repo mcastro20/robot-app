@@ -2,7 +2,6 @@ import React from "react";
 import { Row, Col, Button } from "reactstrap";
 
 export default function Command({
-  place,
   report,
   move,
   left,
@@ -30,6 +29,7 @@ export default function Command({
           <Button
             color="primary"
             className="ml-2"
+            onClick={report}
             disabled={isRobotPlaced ? false : true}
           >
             Report
