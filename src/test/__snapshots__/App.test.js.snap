@@ -1,0 +1,324 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> rendering renders correctly 1`] = `
+<div
+  className="App"
+>
+  <Table
+    robotPosition={
+      Object {
+        "direction": "NORTH",
+        "positionX": 0,
+        "positionY": 0,
+      }
+    }
+  />
+  <Command
+    isRobotPlaced={false}
+    left={[Function]}
+    move={[Function]}
+    report={[Function]}
+    right={[Function]}
+    toggleModalPlaceInput={[Function]}
+  />
+  <Modal
+    autoFocus={true}
+    backdrop={true}
+    backdropTransition={
+      Object {
+        "mountOnEnter": true,
+        "timeout": 150,
+      }
+    }
+    centered={false}
+    fade={true}
+    isOpen={false}
+    keyboard={true}
+    modalTransition={
+      Object {
+        "timeout": 300,
+      }
+    }
+    onClosed={[Function]}
+    onOpened={[Function]}
+    returnFocusAfterClose={true}
+    role="dialog"
+    scrollable={false}
+    toggle={[Function]}
+    unmountOnClose={true}
+    zIndex={1050}
+  >
+    <ModalHeader
+      charCode={215}
+      closeAriaLabel="Close"
+      tag="h5"
+      wrapTag="div"
+    >
+      Place Robot Position
+    </ModalHeader>
+    <Form
+      onSubmit={[Function]}
+      tag="form"
+    >
+      <ModalBody
+        tag="div"
+      >
+        <Row
+          form={true}
+          tag="div"
+        >
+          <Col
+            md={3}
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            <FormGroup
+              tag="div"
+            >
+              <Label
+                for="exampleCity"
+                tag="label"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+              >
+                Position X
+              </Label>
+              <Input
+                name="positionX"
+                onChange={[Function]}
+                type="select"
+                value={0}
+              >
+                <option>
+                  0
+                </option>
+                <option>
+                  1
+                </option>
+                <option>
+                  2
+                </option>
+                <option>
+                  3
+                </option>
+                <option>
+                  4
+                </option>
+              </Input>
+            </FormGroup>
+          </Col>
+          <Col
+            md={3}
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            <FormGroup
+              tag="div"
+            >
+              <Label
+                for="exampleState"
+                tag="label"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+              >
+                Position Y
+              </Label>
+              <Input
+                name="positionY"
+                onChange={[Function]}
+                type="select"
+                value={0}
+              >
+                <option>
+                  0
+                </option>
+                <option>
+                  1
+                </option>
+                <option>
+                  2
+                </option>
+                <option>
+                  4
+                </option>
+              </Input>
+            </FormGroup>
+          </Col>
+          <Col
+            md={6}
+            tag="div"
+            widths={
+              Array [
+                "xs",
+                "sm",
+                "md",
+                "lg",
+                "xl",
+              ]
+            }
+          >
+            <FormGroup
+              tag="div"
+            >
+              <Label
+                for="exampleZip"
+                tag="label"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+              >
+                Direction
+              </Label>
+              <Input
+                name="direction"
+                onChange={[Function]}
+                type="select"
+                value="NORTH"
+              >
+                <option
+                  key="0"
+                >
+                  NORTH
+                </option>
+                <option
+                  key="1"
+                >
+                  EAST
+                </option>
+                <option
+                  key="2"
+                >
+                  SOUTH
+                </option>
+                <option
+                  key="3"
+                >
+                  WEST
+                </option>
+              </Input>
+            </FormGroup>
+          </Col>
+        </Row>
+      </ModalBody>
+      <ModalFooter
+        tag="div"
+      >
+        <Button
+          color="secondary"
+          onClick={[Function]}
+          tag="button"
+        >
+          Cancel
+        </Button>
+        <Button
+          color="primary"
+          tag="button"
+          type="submit"
+        >
+          Place Robot
+        </Button>
+         
+      </ModalFooter>
+    </Form>
+  </Modal>
+  <Modal
+    autoFocus={true}
+    backdrop={true}
+    backdropTransition={
+      Object {
+        "mountOnEnter": true,
+        "timeout": 150,
+      }
+    }
+    centered={false}
+    fade={true}
+    isOpen={false}
+    keyboard={true}
+    modalTransition={
+      Object {
+        "timeout": 300,
+      }
+    }
+    onClosed={[Function]}
+    onOpened={[Function]}
+    returnFocusAfterClose={true}
+    role="dialog"
+    scrollable={false}
+    toggle={[Function]}
+    unmountOnClose={true}
+    zIndex={1050}
+  >
+    <ModalHeader
+      charCode={215}
+      closeAriaLabel="Close"
+      tag="h5"
+      wrapTag="div"
+    >
+      Robot Position Report
+    </ModalHeader>
+    <ModalBody
+      tag="div"
+    >
+      Position X is 
+      0
+       
+      <br />
+      Position Y is 
+      0
+       
+      <br />
+      Facing in 
+      NORTH
+       
+      <br />
+    </ModalBody>
+    <ModalFooter
+      tag="div"
+    >
+      <Button
+        color="secondary"
+        onClick={[Function]}
+        tag="button"
+      >
+        Ok
+      </Button>
+    </ModalFooter>
+  </Modal>
+</div>
+`;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Button } from "reactstrap";
-import Compass from "../img/compass.png";
+import compass from "../img/compass.png";
 
 export default function Command({
   report,
@@ -20,7 +20,7 @@ export default function Command({
     >
       <Row className="mb-4 mt-4">
         <Col>
-          <img src={Compass} alt="Compass" style={{height: "20vh"}}/>
+          <img src={compass} alt="Compass" style={{height: "20vh"}}/>
         </Col>
       </Row>
       <Row className="mb-4 mt-4">
@@ -29,6 +29,7 @@ export default function Command({
             color="primary"
             className="mr-2"
             onClick={toggleModalPlaceInput}
+            name="place"
           >
             Place
           </Button>
@@ -37,6 +38,7 @@ export default function Command({
             className="ml-2"
             onClick={report}
             disabled={isRobotPlaced ? false : true}
+            name="report"
           >
             Report
           </Button>
@@ -48,6 +50,7 @@ export default function Command({
             color="primary"
             onClick={move}
             disabled={isRobotPlaced ? false : true}
+            name="move"
           >
             Move 🠝
           </Button>
@@ -59,6 +62,7 @@ export default function Command({
             color="primary"
             onClick={left}
             disabled={isRobotPlaced ? false : true}
+            name="left"
           >
             ⟲ Left
           </Button>
@@ -68,6 +72,7 @@ export default function Command({
             color="primary"
             onClick={right}
             disabled={isRobotPlaced ? false : true}
+            name="right"
           >
             Right ⟳
           </Button>

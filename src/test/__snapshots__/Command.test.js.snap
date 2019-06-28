@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Command /> rendering renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px solid",
+      "height": "90%",
+      "textAlign": "center",
+    }
+  }
+>
+  <Row
+    className="mb-4 mt-4"
+    tag="div"
+  >
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <img
+        alt="Compass"
+        src="test-file-stub"
+        style={
+          Object {
+            "height": "20vh",
+          }
+        }
+      />
+    </Col>
+  </Row>
+  <Row
+    className="mb-4 mt-4"
+    tag="div"
+  >
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <Button
+        className="mr-2"
+        color="primary"
+        name="place"
+        tag="button"
+      >
+        Place
+      </Button>
+      <Button
+        className="ml-2"
+        color="primary"
+        disabled={true}
+        name="report"
+        tag="button"
+      >
+        Report
+      </Button>
+    </Col>
+  </Row>
+  <Row
+    tag="div"
+  >
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <Button
+        color="primary"
+        disabled={true}
+        name="move"
+        tag="button"
+      >
+        Move 🠝
+      </Button>
+    </Col>
+  </Row>
+  <Row
+    tag="div"
+  >
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <Button
+        color="primary"
+        disabled={true}
+        name="left"
+        tag="button"
+      >
+        ⟲ Left
+      </Button>
+    </Col>
+    <Col
+      tag="div"
+      widths={
+        Array [
+          "xs",
+          "sm",
+          "md",
+          "lg",
+          "xl",
+        ]
+      }
+    >
+      <Button
+        color="primary"
+        disabled={true}
+        name="right"
+        tag="button"
+      >
+        Right ⟳
+      </Button>
+    </Col>
+  </Row>
+</div>
+`;
