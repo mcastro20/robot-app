@@ -5,9 +5,10 @@ import Robot from "./Robot";
 function renderSquare(i, rp) {
   const x = i % 5;
   const y = Math.floor(i / 5);
-  const isRobotHere = x === rp.x && y === rp.y;
+  const isRobotHere =
+    x === parseInt(rp.positionX) && y === parseInt(rp.positionY);
   const grey = (x + y) % 2 === 1;
-  const piece = isRobotHere ? <Robot direction={rp.direction}/> : null;
+  const piece = isRobotHere ? <Robot direction={rp.direction} /> : null;
 
   return (
     <div key={i} style={{ width: "20%", height: "20%" }}>
@@ -25,7 +26,7 @@ export default function Table({ robotPosition }) {
   return (
     <div
       style={{
-        float: 'left',
+        float: "left",
         width: "70%",
         height: "90%",
         display: "flex",
