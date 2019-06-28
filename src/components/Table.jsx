@@ -12,7 +12,9 @@ function renderSquare(i, rp) {
 
   return (
     <div key={i} style={{ width: "20%", height: "20%" }}>
-      <Square grey={grey}>{piece}</Square>
+      <Square grey={grey} x={x} y={y}>
+        {piece}
+      </Square>
     </div>
   );
 }

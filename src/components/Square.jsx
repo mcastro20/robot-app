@@ -1,21 +1,21 @@
-import React from 'react'
+import React from "react";
 
-export default function Square({ grey, children }) {
-  const fill = grey ? 'grey' : 'white'
-  const stroke = grey ? 'white' : 'grey'
+export default function Square({ grey, children, x, y }) {
+  const fill = grey ? "grey" : "white";
+  const stroke = grey ? "white" : "grey";
 
   return (
     <div
       style={{
         backgroundColor: fill,
         color: stroke,
-        width: '100%',
-        height: '100%',
+        width: "100%",
+        height: "100%",
         display: "flex",
         justifyContent: "center"
       }}
     >
-      {children}
+      ({x},{y}){children}
     </div>
-  )
+  );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Button } from "reactstrap";
+import Compass from "../img/compass.png";
 
 export default function Command({
   report,
@@ -17,6 +18,11 @@ export default function Command({
         textAlign: "center"
       }}
     >
+      <Row className="mb-4 mt-4">
+        <Col>
+          <img src={Compass} alt="Compass" style={{height: "20vh"}}/>
+        </Col>
+      </Row>
       <Row className="mb-4 mt-4">
         <Col>
           <Button
