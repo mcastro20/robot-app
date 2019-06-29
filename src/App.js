@@ -42,14 +42,14 @@ export default class App extends React.Component {
 
 		if (currentDirection === "NORTH") {
 
-			if (this.state.robotPosition.positionY === 0) {
+			if (this.state.robotPosition.positionY === 4) {
 				return this.showMessage();
 			}
 
 			this.setState(prevState => ({
 				robotPosition: {
 					...prevState.robotPosition,
-					positionY: this.state.robotPosition.positionY - 1
+					positionY: this.state.robotPosition.positionY + 1
 				}
 			}));
 		}
@@ -70,14 +70,14 @@ export default class App extends React.Component {
 
 		if (currentDirection === "SOUTH") {
 
-			if (this.state.robotPosition.positionY === 4) {
+			if (this.state.robotPosition.positionY === 0) {
 				return this.showMessage();
 			}
 
 			this.setState(prevState => ({
 				robotPosition: {
 					...prevState.robotPosition,
-					positionY: this.state.robotPosition.positionY + 1
+					positionY: this.state.robotPosition.positionY - 1
 				}
 			}));
 		}

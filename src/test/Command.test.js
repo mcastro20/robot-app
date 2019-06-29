@@ -118,6 +118,16 @@ describe('<Command /> interactions', () => {
   });
 
   it('should not allow to move when robot is on the edge of table.', () => {
+    appComponent = shallow(<App />);
+
+    defaultState = setDefaultState({
+      positionX: 0,
+      positionY: 0,
+      direction: "WEST"
+    });
+
+    appComponent.setState(defaultState);
+
     window.alert = jest.fn();
     const move = appComponent.instance().move();
     const command = shallow(<Command move={move} />);
@@ -149,7 +159,7 @@ describe('<Command /> interactions', () => {
 
     defaultState = setDefaultState({
       positionX: 0,
-      positionY: 0,
+      positionY: 4,
       direction: "SOUTH"
     });
 
@@ -158,6 +168,6 @@ describe('<Command /> interactions', () => {
     const command = shallow(<Command move={move} />);
 
     command.find('Button[name="move"]').simulate('click');
-    expect(appComponent.state('robotPosition').positionY).toEqual(1);
+    expect(appComponent.state('robotPosition').positionY).toEqual(3);
   });
 });
